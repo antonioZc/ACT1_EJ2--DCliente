@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+.botones {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.botones button {
+  padding: 1rem 2rem;
+  color: white;
+  background-color: darkcyan;
+  font-size: 1.3rem;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 18rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.ventana {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.662);
+
+  justify-content: center;
+  align-items: center;
+}
+
+.ventana--active {
+  display: flex;
+}
+
+.contenedor__pelicula {
+  width: 95%;
+  max-width: 60rem;
+  position: relative;
+}
+
+.pelicula {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.pelicula__info {
+  color: white;
+}
+
+.pelicula__titulo {
+  text-align: center;
+}
+
+.pelicula__exit__button {
+  background-color: unset;
+  border: none;
+  position: absolute;
+  top: -67px;
+  right: 67px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .pelicula__exit__button {
+    top: -55px;
+    right: 0;
+    left: 0;
+  }
+}

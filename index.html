@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Selecciona una pelicula</h1>
+      <div class="botones">
+        <button data-pelicula-id="1">Avengers: End Game</button>
+        <button data-pelicula-id="2">Deadpool y Lobezno</button>
+        <button data-pelicula-id="3">Spiderman: No way home</button>
+      </div>
+    </div>
+
+    <section class="ventana" id="ventana-pelicula">
+      <div class="contenedor__pelicula">
+        <div class="pelicula">
+          <!-- 
+        <img
+          src="img/avengers.jpg"
+          alt="poster de pelicula"
+          class="pelicula__img"
+        />
+
+        <div class="pelicula__info">
+          <h1 class="pelicula__titulo">Avengers End Game</h1>
+          <p class="pelicula__descripcion">
+            Después de los devastadores eventos de Infinity War, los Vengadores
+            restantes deben unirse para deshacer el caos causado por Thanos y
+            restaurar el equilibrio en el universo.
+          </p>
+        </div>
+     -->
+        </div>
+        <button class="pelicula__exit__button" id="cerrar-ventana">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            viewBox="0 0 24 24"
+            style="fill: #ffff"
+          >
+            <path
+              d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"
+            ></path>
+          </svg>
+        </button>
+      </div>
+    </section>
+  </body>
+</html>
